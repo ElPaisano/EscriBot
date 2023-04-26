@@ -9,6 +9,7 @@ EscriBot is a Python script that uses Langchain, ChatGPT and some custom hacky P
 
 ## Todo items
 - [ ] Clean up code so that it’s generic, won’t break on edge cases, is actually well-written code :D
+- [ ] Fix report formatting
 - [ ] Create a procedure describing how to use this script
 - [ ] Currently, this script is slow, (I think) partially due to not using any parallelization - need to figure that out 
 - [ ] Figure out how to define a full writing style guide to GPT
