@@ -11,9 +11,11 @@ EscriBot is a Python script that uses Langchain, ChatGPT and some custom hacky P
 
 ## Examples:
 
+More examples to be added shortly.
+
 ### Intitial test case
-_Example input_: A copy of the Filecoin docs [ERC-20 quickstart page](https://gist.github.com/ElPaisano/5985b02c82f6eba48a5892b8dca276e4), with a few extra writing mistakes intentionally introduced for test purposes.
-_Example output_: [A report](https://gist.github.com/ElPaisano/82712cafaca2b1fe26e6dcb50ea8af56), formatted as a Markdown file (not handling front matter in this script yet)
+- _Example input_: A copy of the Filecoin docs [ERC-20 quickstart page](https://gist.github.com/ElPaisano/5985b02c82f6eba48a5892b8dca276e4), with a few extra writing mistakes intentionally introduced for test purposes.
+- _Example output_: [A report](https://gist.github.com/ElPaisano/82712cafaca2b1fe26e6dcb50ea8af56), formatted as a Markdown file (not handling front matter in this script yet)
 
 ## Prerequisites
 
@@ -45,6 +47,7 @@ _Example output_: [A report](https://gist.github.com/ElPaisano/82712cafaca2b1fe2
 7. Give us feedback so that we can develop this tool to make it useful for you :)
 
 ## Todo items
+
 - [ ] Clean up code so that it’s generic, won’t break on edge cases, is actually well-written code :D
 - [ ] Fix report formatting
 - [ ] Create a procedure describing how to use this script
