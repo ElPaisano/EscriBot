@@ -9,6 +9,12 @@ EscriBot is a Python script that uses Langchain, ChatGPT and some custom hacky P
 
 > EscriBot is currently in beta, so it's not ready for production, nor is it intended to be (yet)
 
+## Examples:
+
+### Intitial test case
+_Example input_: A copy of the Filecoin docs [ERC-20 quickstart page](https://gist.github.com/ElPaisano/5985b02c82f6eba48a5892b8dca276e4), with a few extra writing mistakes intentionally introduced for test purposes.
+_Example output_: [A report](https://gist.github.com/ElPaisano/82712cafaca2b1fe26e6dcb50ea8af56), formatted as a Markdown file (not handling front matter in this script yet)
+
 ## Prerequisites
 
 - A paid OpenAI account
