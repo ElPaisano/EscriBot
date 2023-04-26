@@ -155,6 +155,11 @@ def prune_procedure(markdown_str):
     return cleaned_markdown
 
 def create_report_comment(chunk):
+   proc_sys_template="You are a helpful assistant that reviews technical writing for American English spelling, grammar, phrasing and conciseness."
+   proc_user_template="Review: \n\n {section}. Output suggested edits as bullet points, and an edited copy of the original text."
+
+   proc_chat_prompt = set_prompt(proc_sys_template, proc_user_template)
+
    aiMsg4Para = chat(proc_chat_prompt.format_prompt(section = chunk).to_messages())
    resp = str(aiMsg4Para.content)
    report_list.append(resp+"\n")
@@ -176,11 +181,6 @@ front_matter = doc[0].page_content
 md_chunks = chunk_MD_on_header(file_path)
 
 report_list = []
-
-proc_sys_template="You are a helpful assistant that reviews technical procedures for American English spelling, grammar, phrasing and conciseness."
-proc_user_template="Review: \n\n {section}. Output is formatted as Markdown. Output contains a bulleted list of errors found in that section, an empty line, a title `### EDITED VERSION`, another empty line, and the edited version of the section returned as markdown and contained in a fenced code block."
-
-proc_chat_prompt = set_prompt(proc_sys_template, proc_user_template)
 
 for chunk in md_chunks:
    chunk_header = extract_first_header_title(chunk)
