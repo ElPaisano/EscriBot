@@ -19,7 +19,7 @@ More examples to be added shortly.
 
 ### This README
 
-EscriBot was run against this repositories README as of [577e48136f4ab91966bed6bb33242185fc7e3a4e](https://github.com/ElPaisano/EscriBot/commit/577e48136f4ab91966bed6bb33242185fc7e3a4e). The report produced for this repositories README can be found in `\example-reports`. Note that the report ahs formatting issues and missed a section - this tool is still very much under construction. However, if you review the README as of latest commit, you'll see that the suggestions were useful, so they were incorporated.
+EscriBot was run against this repositories README as of [577e48136f4ab91966bed6bb33242185fc7e3a4e](https://github.com/ElPaisano/EscriBot/commit/577e48136f4ab91966bed6bb33242185fc7e3a4e). The report produced for this repositories README can be found in `\example-reports`. Note that the report has formatting issues and missed a section - this tool is still very much under construction. However, if you review the README as of latest commit, you'll see that the suggestions were useful, so they were incorporated.
 
 ## Prerequisites
 
