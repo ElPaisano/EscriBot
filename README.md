@@ -27,12 +27,14 @@ EscriBot was run against this repositories README as of [577e48136f4ab91966bed6b
 - An OpenAI API key
 - A terminal
 - Python 3
-- All packages used in `escribot.py` installed (use pip or pip3)
-- Patience (this script is currently not optimized and hacky, so it takes a few minutes to complete. Also, GPT has issues sometimes)
+- All packages used in `escribot.py` installed. You can use pip or pip3 for this:
+  - `re`
+  - `langchain`
+- Patience. This script is currently not optimized, so it takes at least a minute to complete, and can take 5-10 minutes for longer files. Also, GPT breaks sometimes.
 
 ## Instructions for Use
 
-1. Copy `escribot.py` to your local machine (you don't need the README).
+1. Copy `escribot.py` to your local machine. You don't need the README.
 2. Edit the following empty variables in `escribot.py`:
    - `file_path`: set this to the full path of the file that you would like reviewed (e.g. `\Users\me\mydocs\doc.md`).
    - `report_path`: set this to the full path of the report to be generated (e.g. `\Users\me\gpt-reports\report-1.md`).
