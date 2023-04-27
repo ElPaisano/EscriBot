@@ -156,7 +156,7 @@ def prune_procedure(markdown_str):
 
 def create_report_comment(chunk):
    proc_sys_template="You are a helpful assistant that reviews technical writing for American English spelling, grammar, phrasing and conciseness."
-   proc_user_template="Review: \n\n {section}. Output suggested edits as bullet points, and an edited copy of the original text."
+   proc_user_template="Review. If there are errors, output should be original text in a section titled ### Original, followed by suggested edits as bullet points in a section titled ### Errors, followed by edited text in a section titled ### Edited: \n\n {section}."
 
    proc_chat_prompt = set_prompt(proc_sys_template, proc_user_template)
 
@@ -184,7 +184,7 @@ report_list = []
 
 for chunk in md_chunks:
    chunk_header = extract_first_header_title(chunk)
-   report_list.append("\n\n ## REVIEW: "+chunk_header+"\n")
+   report_list.append("\n\n## REVIEW: "+chunk_header+"\n")
 
    if chunkIsProcedure(chunk):
       report_list.append("\n<!-- CLASSIFIED AS PROCEDURE !-->\n\n")
@@ -203,11 +203,11 @@ for chunk in md_chunks:
          build_section_report(chunks)
 
    else:
-      chunk_paras = split_paragraphs(chunk)
+      #chunk_paras = split_paragraphs(chunk)
       report_list.append("\n<!-- CLASSIFIED AS NARRATIVE !-->\n\n")
 
-      build_section_report(chunk_paras)
-
+      #build_section_report(chunk_paras)
+      create_report_comment(chunk)
    report_list.append("\n\n <!-- END_REVIEW: "+chunk_header+" !-->\n")
 
 # add the name and path for the markdown report that the script creates
