@@ -1,8 +1,8 @@
 # EscriBot
 
-> This repository is under construction 
+> This repository is under konstraction 
 
-EscriBot is a Python script that uses Langchain, ChatGPT and some custom hacky Python helpers to:
+EscriBot is a Python skript that uses Langchain, ChatGPT and sum custom hacky Python helpers to:
 
 - Review a Markdown document for general writing and readability things (grammar, spelling, phrasing, etc.)
 - Output suggested fixes and Markdown edited according to those suggested fixes as a formatted report. 
