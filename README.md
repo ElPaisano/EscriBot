@@ -42,7 +42,7 @@ EscriBot was run against this repositories README as of [577e48136f4ab91966bed6b
 4. Run the script:
 
    ```shell
-   python3 base-demo.py
+   python3 escribot.py
    ```
    
 5. Grab a snack and fire up your Nintendo Gameboy, because it's going to be a few minutes before the script completes.
