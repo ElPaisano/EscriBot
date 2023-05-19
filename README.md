@@ -1,6 +1,8 @@
 # EscriBot
 
-> This repository is under construction.
+> WARNING
+>
+> This repository is under very much in beta mode/ under construction and is liable to change frequently.
 
 EscriBot is a Python script that uses Langchain, ChatGPT, and some custom hacky Python helpers to:
 
@@ -30,27 +32,32 @@ EscriBot was run against this repositories README as of [577e48136f4ab91966bed6b
 - All packages used in `escribot.py` installed. You can use pip or pip3 for this:
   - `re`
   - `langchain`
-- Patience. This script is currently not optimized, so it takes at least a minute to complete, and can take 5-10 minutes for longer files. Also, GPT breaks sometimes.
+- Patience. This script is currently not optimized, so it takes at least a minute to complete, and can take 5-10 minutes for longer files. Also, GPT just breaks sometimes.
 
 ## Instructions for Use
 
 1. Copy `escribot.py` to your local machine. You don't need the README.
-2. Edit the following empty variables in `escribot.py`:
+1. Edit the following empty variables in `escribot.py`:
    - `file_path`: set this to the full path of the file that you would like reviewed (e.g. `\Users\me\mydocs\doc.md`).
    - `report_path`: set this to the full path of the report to be generated (e.g. `\Users\me\gpt-reports\report-1.md`).
-3. Open a terminal.
-4. Run the script:
+1. Open a terminal.
+1. In the terminal, set your OpenAI API key `<key>`:
+
+   ```shell
+   export OPENAI_API_KEY="<key>"
+   ```
+1. Run the script:
 
    ```shell
    python3 escribot.py
    ```
    
-5. Grab a snack and fire up your Nintendo Gameboy, because it's going to be a few minutes before the script completes.
+1. Grab a snack and fire up your Nintendo Gameboy, because it's going to be a few minutes before the script completes.
 
    > WARNING: The script will hang while it is completing. Do not exit your terminal.
    
-6. Once the script completes, navigate to `report_path` and view the report.
-7. Give us feedback so that we can develop this tool to make it more useful for you.
+1. Once the script completes, navigate to `report_path` and view the report.
+1. Give us feedback so that we can develop this tool to make it more useful for you.
 
 ## To-do items
 
