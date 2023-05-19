@@ -2,7 +2,7 @@
 
 > WARNING
 >
-> This repository is under very much in beta mode/ under construction and is liable to change frequently.
+> This repository is very much under construction, and is liable to change frequently.
 
 EscriBot is a Python script that uses Langchain, ChatGPT, and some custom hacky Python helpers to:
 
